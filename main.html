@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <title>SignUp Page</title>
+
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header><h1>Sign Up</h1></header>
+      <main>
+        <form action="/" method="POST" name="signup_page">
+          <section class="each-field">
+            <label for="fname">First Name:</label><br />
+            <div class="float">
+              <input type="text" id="fname" name="fname" />
+              <p class="firstName">Please enter a valid first name</p>
+            </div>
+          </section>
+          <section class="each-field">
+            <label for="lname">Last Name:</label><br />
+            <div class="float">
+              <input type="text" id="lname" name="lname" />
+              <p class="lastName">Please enter a valid last name</p>
+            </div>
+          </section>
+          <section class="each-field">
+            <label for="email">Email:</label><br />
+            <div class="float">
+              <input type="text" id="email" name="email" />
+              <p class="email">Please enter a valid email ID</p>
+            </div>
+          </section>
+          <section class="each-field">
+            <label for="password">Password:</label><br />
+            <div class="float">
+              <input type="password" id="password" name="password" />
+              <p class="password">
+                Password should be of atleast 8 charactes including one
+                uppercase alphabet, at least one symbol and one number
+              </p>
+            </div>
+          </section>
+          <section class="each-field">
+            <label for="confirm">Confirm Your Password:</label><br />
+            <div class="float">
+              <input type="password" id="confirm" name="confirm" />
+              <p class="confirm">Re-enter the same password</p>
+            </div>
+          </section>
+          <section class="center">
+            <input type="checkbox" id="checkbox" />
+            <label for="checkbox">I agree to the terms & conditions</label>
+          </section>
+          <section class="button-area">
+            <input type="submit" value="Sign Up" class="button" />
+            <input type="reset" value="Cancel" class="button" />
+          </section>
+        </form>
+      </main>
+    </div>
+    <script type="text/javascript" src="form.js"></script>
+    <!-- <script type="app/javascript" src="app.js"></script> -->
+    <!-- <script type="server/javascript" src="server.js"></script> -->
+  </body>
+</html>
